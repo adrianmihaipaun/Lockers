@@ -1,0 +1,11 @@
+parameters:
+        # Default locker source option
+        default_locker_source: 'sameday'
+
+        # May configure the application avaliable lockers sources based on entity id
+        # - "id" represents the entity id
+        # - "name" represents the property suffix of lockers source entity
+        lockers_sources:
+            sameday:
+                id: 1
+                name: 'Sameday'

@@ -1,0 +1,1161 @@
+[
+    {
+        "name": "EasyBOX OMV Belu",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 4",
+        "cityId": 4,
+        "address": "SOS. OLTENITEI NR. 2",
+        "postalCode": "123456 ",
+        "lat": 44.402301,
+        "lng": 26.098118,
+        "lockerId": 2,
+        "supportedPayment": 1,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_LOCKER_A07.",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 9
+        },
+        {
+            "size": "M",
+            "number": 16
+        },
+        {
+            "size": "S",
+            "number": 15
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "L",
+            "number": 4
+        },
+        {
+            "size": "M",
+            "number": 10
+        },
+        {
+            "size": "S",
+            "number": 12
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Berceni",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 4",
+        "cityId": 4,
+        "address": "STR. BERCENI NR. 8",
+        "postalCode": "445010 ",
+        "lat": 44.389929,
+        "lng": 26.124641,
+        "lockerId": 1,
+        "supportedPayment": 1,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_A03",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 5
+        },
+        {
+            "size": "M",
+            "number": 15
+        },
+        {
+            "size": "S",
+            "number": 16
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "L",
+            "number": 2
+        },
+        {
+            "size": "M",
+            "number": 6
+        },
+        {
+            "size": "S",
+            "number": 6
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Pantelimon",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 2",
+        "cityId": 2,
+        "address": "SOS. PANTELIMON COLT CU PIERRE DE COUBERTIN",
+        "postalCode": " ",
+        "lat": 44.443113,
+        "lng": 26.150963,
+        "lockerId": 3,
+        "supportedPayment": 1,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 10
+        },
+        {
+            "size": "M",
+            "number": 15
+        },
+        {
+            "size": "S",
+            "number": 14
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "L",
+            "number": 1
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "02:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Vasile Milea",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 6",
+        "cityId": 6,
+        "address": "STR. VASILE MILEA 5",
+        "postalCode": " ",
+        "lat": 44.438381,
+        "lng": 26.056651,
+        "lockerId": 5,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 8
+        },
+        {
+            "size": "M",
+            "number": 14
+        },
+        {
+            "size": "S",
+            "number": 20
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "L",
+            "number": 1
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Iuliu Maniu",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 6",
+        "cityId": 6,
+        "address": "BD. IULIU MANIU NR 396-400",
+        "postalCode": " ",
+        "lat": 44.434291,
+        "lng": 25.995471,
+        "lockerId": 8,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 14
+        },
+        {
+            "size": "M",
+            "number": 19
+        },
+        {
+            "size": "S",
+            "number": 26
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "L",
+            "number": 1
+        },
+        {
+            "size": "M",
+            "number": 2
+        },
+        {
+            "size": "S",
+            "number": 2
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Titan",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 3",
+        "cityId": 3,
+        "address": "BD. N. GRIGORESCU NR 2",
+        "postalCode": " ",
+        "lat": 44.433166,
+        "lng": 26.160209,
+        "lockerId": 9,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 9
+        },
+        {
+            "size": "M",
+            "number": 14
+        },
+        {
+            "size": "S",
+            "number": 15
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "L",
+            "number": 2
+        },
+        {
+            "size": "S",
+            "number": 3
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Rahova",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 5",
+        "cityId": 5,
+        "address": "CALEA RAHOVEI NR 266A",
+        "postalCode": " ",
+        "lat": 44.414397,
+        "lng": 26.075304,
+        "lockerId": 10,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 9
+        },
+        {
+            "size": "M",
+            "number": 12
+        },
+        {
+            "size": "S",
+            "number": 17
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "L",
+            "number": 2
+        },
+        {
+            "size": "M",
+            "number": 3
+        },
+        {
+            "size": "S",
+            "number": 5
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Cosbuc",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 4",
+        "cityId": 4,
+        "address": "STR. GAZELEI NR 18-20",
+        "postalCode": " ",
+        "lat": 44.420231,
+        "lng": 26.088441,
+        "lockerId": 13,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 11
+        },
+        {
+            "size": "M",
+            "number": 9
+        },
+        {
+            "size": "S",
+            "number": 15
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "M",
+            "number": 5
+        },
+        {
+            "size": "S",
+            "number": 3
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Pipera",
+        "county": "Ilfov",
+        "countyId": 26,
+        "city": "Voluntari",
+        "cityId": 110,
+        "address": "SOS. PIPERA-TUNARI NR 1-4",
+        "postalCode": " ",
+        "lat": 44.493025,
+        "lng": 26.126473,
+        "lockerId": 14,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 11
+        },
+        {
+            "size": "M",
+            "number": 15
+        },
+        {
+            "size": "S",
+            "number": 20
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX Petrom Baneasa",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 1",
+        "cityId": 1,
+        "address": "SOS. BUCURESTI-PLOIESTI NR 2",
+        "postalCode": " ",
+        "lat": 44.486999,
+        "lng": 26.078807,
+        "lockerId": 15,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 11
+        },
+        {
+            "size": "M",
+            "number": 15
+        },
+        {
+            "size": "S",
+            "number": 20
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Lizeanu",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 2",
+        "cityId": 2,
+        "address": "STR. MAICA DOMNULUI NR 1",
+        "postalCode": " ",
+        "lat": 44.455549,
+        "lng": 26.120799,
+        "lockerId": 16,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 11
+        },
+        {
+            "size": "M",
+            "number": 15
+        },
+        {
+            "size": "S",
+            "number": 12
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Aerogarii",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 1",
+        "cityId": 1,
+        "address": "STR. AL. SERBANESCU NR 85",
+        "postalCode": " ",
+        "lat": 44.492181,
+        "lng": 26.087541,
+        "lockerId": 17,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 9
+        },
+        {
+            "size": "M",
+            "number": 15
+        },
+        {
+            "size": "S",
+            "number": 15
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX OMV Gara de Nord",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 1",
+        "cityId": 1,
+        "address": "STR. GRIVITEI NR 183",
+        "postalCode": " ",
+        "lat": 44.446832,
+        "lng": 26.076358,
+        "lockerId": 18,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 9
+        },
+        {
+            "size": "M",
+            "number": 12
+        },
+        {
+            "size": "S",
+            "number": 18
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "M",
+            "number": 1
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX Petrom Jiului",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 1",
+        "cityId": 1,
+        "address": "STR. JIULUI NR 10A",
+        "postalCode": " ",
+        "lat": 44.483711,
+        "lng": 26.045201,
+        "lockerId": 19,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 15
+        },
+        {
+            "size": "M",
+            "number": 18
+        },
+        {
+            "size": "S",
+            "number": 26
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [
+        {
+            "size": "M",
+            "number": 2
+        },
+        {
+            "size": "S",
+            "number": 2
+        }
+        ],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    },
+    {
+        "name": "EasyBOX Petrom Mihai Bravu",
+        "county": "Bucuresti",
+        "countyId": 1,
+        "city": "Sectorul 3",
+        "cityId": 3,
+        "address": "SOS. MIHAI BRAVU NR 485-489",
+        "postalCode": " ",
+        "lat": 44.411301,
+        "lng": 26.127371,
+        "lockerId": 20,
+        "supportedPayment": 0,
+        "clientVisible": 1,
+        "deliveryLogisticLocation": "B_SEMA_OF01",
+        "email": "",
+        "phone": "",
+        "excludedSellers": [],
+        "availableBoxes": [
+        {
+            "size": "L",
+            "number": 11
+        },
+        {
+            "size": "M",
+            "number": 15
+        },
+        {
+            "size": "S",
+            "number": 17
+        }
+        ],
+        "reservedBoxes": [],
+        "occupiedBoxes": [],
+        "schedule": [
+        {
+            "day": 1,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 2,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 3,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 4,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 5,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 6,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        },
+        {
+            "day": 7,
+            "openingHour": "00:00",
+            "closingHour": "23:59"
+        }
+        ]
+    }
+]
