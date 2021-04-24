@@ -25,9 +25,9 @@ use stdClass;
 class Sameday extends BaseLockers
 {
     protected $types = [
-        "availableBoxes",
-        "reservedBoxes",
-        "occupiedBoxes"
+        "availableBoxes" => "available",
+        "reservedBoxes" => "reserved",
+        "occupiedBoxes" => "occupied"
     ];
     /**
      * @var SamedaySDK
@@ -230,16 +230,27 @@ class Sameday extends BaseLockers
      */
     protected function prepareLockerBoxes($locker, $providerLocker) :void
     {
-        foreach (LockersBoxesTypes::getTypes() as $type) {
+        foreach ($this->types as $typeKey => $type) {
             $repository = $this->entityManager->getRepository(LockersBoxes::class);
             $boxesTypes = $repository->findBy([
                 'locker_id' => $locker->id,
-                'box_type' => $type
+                'box_type' => LockersBoxesTypes::${$type}
             ]);
 
             foreach ($boxesTypes as $boxType) {
-                foreach ($providerLocker->)
+                $find = 0;
+                foreach ($providerLocker->$typeKey as $box) {
+                    if ($boxType->size == $box->size) {
+                        $find = 1;
+                        $this->updateLockerBox($boxType, $box);
+                    }
+                }
             }
         }
+    }
+
+    protected function updateLockerBox($boxType, $box)
+    {
+        
     }
 }

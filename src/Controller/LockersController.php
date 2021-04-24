@@ -26,14 +26,7 @@ class LockersController extends AbstractController
         $lockersBoxesTypesRepository = $entityManager->getRepository(LockersBoxesTypes::class);
 
         $types = $lockersBoxesTypesRepository->findAll();
-        foreach($types as $type) {
-            dd($type);
-            foreach ($type as $attr) {
-                dd($attr);
-            }
-            
-        }
-        dd('x');
+        
         $locker = new SamedayLockers(
             new LockerCredentials(
                 "milleniumTEST",

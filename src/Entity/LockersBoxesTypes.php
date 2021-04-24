@@ -79,24 +79,4 @@ class LockersBoxesTypes
 
         return $this;
     }
-
-    /**
-     * Get all entity types
-     * 
-     * @return array
-     */
-    public static function getTypes() :array
-    {
-        $class = new \ReflectionClass(__CLASS__);
-        $staticProperties = $class->getStaticProperties();
-
-        $types = [];
-        foreach ($staticProperties as $propertyName => $value) { 
-            if (substr($propertyName, 0, 5) == 'type_') {
-                $types[$propertyName] = $value;
-            }
-        }
-
-        return $types;
-    }
 }
