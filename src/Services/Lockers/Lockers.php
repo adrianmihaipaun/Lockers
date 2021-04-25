@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Crons\Lockers;
+namespace App\Services\Lockers;
 
-use App\Crons\Lockers\Interfaces\LockersInterface;
+use App\Services\Lockers\Interfaces\LockersInterface;
 
-use App\Crons\Lockers\LockerCredentials;
+use App\Services\Lockers\LockerCredentials;
 
 class Lockers implements LockersInterface
 {

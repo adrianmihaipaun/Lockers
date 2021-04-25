@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Crons\Lockers;
+namespace App\Services\Lockers;
 
 
 class LockerCredentials

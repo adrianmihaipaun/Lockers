@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Crons\Lockers\Exceptions;
+namespace App\Services\Lockers\Exceptions;
 
 class LockerErrorException extends \Exception
 {

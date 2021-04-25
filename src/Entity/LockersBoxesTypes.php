@@ -11,28 +11,28 @@ use Doctrine\ORM\Mapping as ORM;
 class LockersBoxesTypes
 {
     /**
-     * Lockers boxes type available
+     * Lockers boxes type available boxes
      * - represents the entity id
      * 
      * @var integer
      */
-    public static $type_available = 1;
+    public static $type_availableBoxes = 1;
 
     /**
-     * Lockers boxes type reserved
+     * Lockers boxes type reserved boxes
      * - represents the entity id
      * 
      * @var integer
      */
-    public static $type_reserved = 2;
+    public static $type_reservedBoxes = 2;
 
     /**
-     * Lockers boxes type occupied
+     * Lockers boxes type occupied boxes
      * - represents the entity id
      * 
      * @var integer
      */
-    public static $type_occupied = 1;
+    public static $type_occupiedBoxes = 3;
 
     /**
      * @ORM\Id
@@ -45,11 +45,6 @@ class LockersBoxesTypes
      * @ORM\Column(type="string", length=255)
      */
     private $name;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $status;
 
     public function getId(): ?int
     {
@@ -68,15 +63,23 @@ class LockersBoxesTypes
         return $this;
     }
 
-    public function getStatus(): ?int
+    /**
+     * Get lockers boxes types
+     * 
+     * @return array
+     */
+    public static function getTypes() :array
     {
-        return $this->status;
-    }
+        $class = new \ReflectionClass(__CLASS__);
+        $staticProperties = $class->getStaticProperties();
 
-    public function setStatus(int $status): self
-    {
-        $this->status = $status;
+        $types = [];
+        foreach ($staticProperties as $propertyName => $value) { 
+            if (substr($propertyName, 0, 5) == 'type_') {
+                $types[str_replace('type_', '', $propertyName)] = $value;
+            }
+        }
 
-        return $this;
+        return $types;
     }
 }

@@ -35,12 +35,7 @@ class LockersBoxes
     /**
      * @ORM\Column(type="integer")
      */
-    private $boxType;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $status;
+    private $lockerBoxesTypeId;
 
     public function getId(): ?int
     {
@@ -83,26 +78,14 @@ class LockersBoxes
         return $this;
     }
 
-    public function getBoxType(): ?int
+    public function getLockerBoxesTypeId(): ?int
     {
-        return $this->boxType;
+        return $this->lockerBoxesTypeId;
     }
 
-    public function setBoxType(int $boxType): self
+    public function setLockerBoxesTypeId(int $lockerBoxesTypeId): self
     {
-        $this->boxType = $boxType;
-
-        return $this;
-    }
-
-    public function getStatus(): ?int
-    {
-        return $this->status;
-    }
-
-    public function setStatus(int $status): self
-    {
-        $this->status = $status;
+        $this->lockerBoxesTypeId = $lockerBoxesTypeId;
 
         return $this;
     }

@@ -43,8 +43,9 @@ services:
         arguments:
             - '@SamedayLockersCredentials'
     
-    App\Command\ImportLockers:
-        tags:
-            - { name: 'console.command', command: 'app:import-lockers'}
+    #App\Command\ImportLockers:
+        #tags:
+            #- { name: 'console.command', command: 'app:import-lockers'}
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+~

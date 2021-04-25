@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Crons\Lockers\Interfaces;
+namespace App\Services\Lockers\Interfaces;
 
 interface LockersInterface
 {
