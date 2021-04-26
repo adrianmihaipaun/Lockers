@@ -49,7 +49,7 @@ class LockersSchedule
 
         $repository = $this->entityManager->getRepository(LockersScheduleEntity::class);
         $lockerSchedules = $repository->findBy([
-            'locker_id' => $this->locker->id
+            'lockerId' => $this->locker->id
         ]);
 
         if (!$lockerSchedules) {
@@ -100,7 +100,7 @@ class LockersSchedule
     {
         $repository = $this->entityManager->getRepository(LockersScheduleEntity::class);
         $schedules = $repository->findBy([
-            'locker_id' => $lockerId
+            'lockerId' => $lockerId
         ]);
 
         if ($schedules) {

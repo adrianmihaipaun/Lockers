@@ -2,16 +2,18 @@
 
 namespace App\Services\Lockers\Sameday;
 
-use App\Services\Lockers\Lockers as BaseLockers;
+use Symfony\Component\Config\FileLocator;
+use Doctrine\ORM\EntityManagerInterface;
+
 use Sameday\Requests\SamedayGetLockersRequest;
 use Sameday\Responses\SamedayGetLockersResponse;
 use Sameday\SamedayClient;
 use Sameday\Sameday as SamedaySDK;
+use stdClass;
+
+use App\Services\Lockers\Lockers as BaseLockers;
 use App\Services\Lockers\LockerCredentials;
 use App\Services\Lockers\Exceptions\LockerErrorException;
-use Symfony\Component\Config\FileLocator;
-use Doctrine\ORM\EntityManagerInterface;
-
 use App\Services\Lockers\Sameday\Lockers;
 use App\Services\Lockers\Sameday\LockersBoxes;
 use App\Services\Lockers\Sameday\LockersSchedule;
@@ -19,7 +21,7 @@ use App\Services\Lockers\Sameday\LockersSchedule;
 use App\Entity\Lockers as LockerEntity;
 use App\Entity\LockersSource;
 use App\Repository\LockersRepository;
-use stdClass;
+use Exception;
 
 class Sameday extends BaseLockers
 {
@@ -53,8 +55,7 @@ class Sameday extends BaseLockers
 
         $this->sourceId = LockersSource::$source_Sameday;
         $this->entityManager = $entityManager;
-        $this->lockersRepository = $this->entityManager->getRepository(LockersRepository::class);
-
+        $this->lockersRepository = $this->entityManager->getRepository(LockerEntity::class);
         $this->makeProviderConnection();
     }
 
@@ -124,8 +125,8 @@ class Sameday extends BaseLockers
         foreach ($this->getResponse() as $locker) {
             try {
                 $this->prepareLocker($locker);
-            } catch (\Throwable $th) {
-                //throw $th;
+            } catch (\Exception $e) {
+                dd($e->getMessage()); // TODO throw exception
             }
         }
     }
@@ -138,37 +139,47 @@ class Sameday extends BaseLockers
      */
     protected function prepareLocker(stdClass $providerLocker) :void
     {
-        $locker = $this->lockersRepository->findOneBy([
-            'source_id' => $this->getSourceId(),
-            'external_id' => $providerLocker->lockerId
+        $repository = $this->lockersRepository;
+        $locker = $repository->findOneBy([
+            'sourceId' => $this->getSourceId(),
+            'externalId' => $providerLocker->lockerId
         ]);
 
-        if (!$locker) {
-            $locker = $this->createLocker($providerLocker);
-        } else {
-            $locker = $this->updateLocker($locker, $providerLocker);
-        }
+        $lockersService = new Lockers(
+            $this->entityManager,
+            $this->lockersRepository,
+            $providerLocker,
+            $this->getSourceId()
+        );
 
         try {
-            $lockerBoxes = new LockersBoxes(
-                $locker,
-                $this->entityManager,
-                $providerLocker
-            );
+            $locker = $lockersService->getLocker();
+        } catch (\Exception $e) {
+            dd($e->getMessage()); // TODO throw exception
+        }
+
+        $lockerBoxes = new LockersBoxes(
+            $locker,
+            $this->entityManager,
+            $providerLocker
+        );
+
+        try {
             $lockerBoxes->storeBoxes();
-        } catch (\Throwable $th) {
-            //throw $th; TODO
+        } catch (\Exception $e) {
+            dd($e->getMessage()); // TODO throw exception
         }
 
+        $lockerBoxes = new LockersSchedule(
+            $locker,
+            $this->entityManager,
+            $providerLocker
+        );
+
         try {
-            $lockerBoxes = new LockersSchedule(
-                $locker,
-                $this->entityManager,
-                $providerLocker
-            );
             $lockerBoxes->storeSchedules();
-        } catch (\Throwable $th) {
-            //throw $th; TODO
+        } catch (\Exception $e) {
+            dd($e->getMessage()); // TODO throw exception
         }
     }
 }

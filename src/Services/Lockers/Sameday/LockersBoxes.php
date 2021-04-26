@@ -45,8 +45,8 @@ class LockersBoxes
         foreach (LockersBoxesTypes::getTypes() as $typeName => $typeId) {
             $repository = $this->entityManager->getRepository(LockersBoxesEntity::class);
             $boxesTypes = $repository->findBy([
-                'locker_id' => $this->locker->id,
-                'box_type' => $typeId
+                'lockerId' => $this->locker->id,
+                'lockerBoxesTypeId' => $typeId
             ]);
 
             // If provider locker has no current type name try to delete all locker boxes

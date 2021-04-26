@@ -48,8 +48,8 @@ class Lockers
     public function getLocker() :LockersEntity
     {
         $locker = $this->lockersRepository->findOneBy([
-            'source_id' => $this->sourceId,
-            'external_id' => $this->providerLocker->lockerId
+            'sourceId' => $this->sourceId,
+            'externalId' => $this->providerLocker->lockerId
         ]);
 
         if (!$locker) {
@@ -84,6 +84,7 @@ class Lockers
         $locker->setSourceId($this->sourceId);
         $locker->setExternalId($this->providerLocker->lockerId);
         $locker->setSupportedPayment($this->providerLocker->supportedPayment);
+        $locker->setActive($this->checkLockerIsActive());
         $this->entityManager->persist($locker);
 
         return $locker;
@@ -136,7 +137,49 @@ class Lockers
         if ($locker->getSupportedPayment() != $this->providerLocker->supportedPayment) {
             $locker->setSupportedPayment($this->providerLocker->supportedPayment);
         }
+        if ($locker->getActive() != $this->checkLockerIsActive()) {
+            $locker->setActive($this->checkLockerIsActive());
+        }
 
         return $locker;
+    }
+
+    /**
+     * Check locker is active
+     * - first: check the locker has available boxes
+     * - second: check the locker has current day in schedules list
+     * 
+     * @return boolean
+     */
+    protected function checkLockerIsActive() :bool
+    {
+        // Verify availableBoxes property exists
+        if (!property_exists($this->providerLocker, 'availableBoxes')) {
+            return false;
+        }
+
+        // Get sum of available boxes
+        $sumOfAvailableBoxes = array_sum(
+            array_values(
+                array_column((array) $this->providerLocker->availableBoxes, 'number')
+            )
+        );
+
+        // Verify schedule property exists
+        if (!property_exists($this->providerLocker, 'schedule')) {
+            return false;
+        }
+
+        // Get available days from locker schedules
+        $days = array_column((array) $this->providerLocker->schedule, 'day');
+        
+        // Get current day
+        $currentDay = date('w');
+        // If current day is 0 (Sunday) set day to 7
+        if ($currentDay === 0) {
+            $currentDay = 7;
+        }
+
+        return $sumOfAvailableBoxes > 0 && in_array($currentDay, $days);
     }
 }

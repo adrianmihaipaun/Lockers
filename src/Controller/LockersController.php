@@ -6,9 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-use App\Crons\Lockers\Sameday\Sameday as SamedayLockers;
+use App\Services\Lockers\Sameday\Sameday as SamedayLockers;
 use App\Entity\Lockers;
-use App\Crons\Lockers\LockerCredentials;
+use App\Services\Lockers\LockerCredentials;
 use Exception;
 use Symfony\Component\Config\FileLocator;
 
@@ -33,7 +33,7 @@ class LockersController extends AbstractController
                 "PpfGWl5wrw==",
                 "https://sameday-api.demo.zitec.com"
             ), 
-            $this->entityManager
+            $entityManager
         );
 
         try {
@@ -42,7 +42,7 @@ class LockersController extends AbstractController
             throw new Exception($e->getMessage());
         }
         
-        dd($locker->getResponse());
+        // dd($locker->getResponse());
 
 
         $entityManager = $this->getDoctrine()->getManager();

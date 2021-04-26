@@ -31,7 +31,7 @@ services:
 
     # auth credentials to get sameday lockers
     SamedayLockersCredentials:
-        class: 'App\Crons\Lockers\LockerCredentials'
+        class: 'App\Services\Lockers\LockerCredentials'
         autowire: false
         arguments:
             $username: '%lockers.sameday.username%'
@@ -39,7 +39,7 @@ services:
 
     # Sameday lockers
     SamedayLockers:
-        class: 'App\Crons\Lockers\Sameday\Samedy'
+        class: 'App\Service\Lockers\Sameday\Samedy'
         arguments:
             - '@SamedayLockersCredentials'
     
@@ -48,4 +48,3 @@ services:
             #- { name: 'console.command', command: 'app:import-lockers'}
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-~
